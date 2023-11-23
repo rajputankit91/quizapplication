@@ -10,8 +10,7 @@ const QuizLists = () =>{
 
     useEffect(() =>{
         const fetchData = async () =>{
-            axios
-            .get("../../public/QuizQuestionData.json")
+            axios.get("../../public/QuizQuestionData.json")
             .then((res) =>{
                 setQuiznameData(res.data)
                 console.log(res.data);
