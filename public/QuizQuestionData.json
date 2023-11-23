@@ -1,0 +1,218 @@
+[
+ {
+    "quizName":"HTML Quiz",
+    "quizId":1,
+    "questions":[
+        {
+            "question":"What is HTML?",
+            "options":[
+                "HTML describes the structure of a webpage",
+                "HTML is the standard markup language mainly used to create web pages",
+                "HTML consists of a set of elements that helps the browser how to view the content",
+                "All of the mentioned"
+            ],
+            "answer":4,
+            "id":11
+        },
+        {
+            "question":"Who is the father of HTML?",
+            "options":[
+                "Rasmus Lerdorf",
+                "Tim Berners-Lee",
+                "Brendan Eich",
+                "Sergey Brin"
+            ],
+            "id":12,
+            "answer":2
+        },
+        {
+            "question":"What is the correct syntax of doctype in HTML5?",
+            "options":[
+                "</doctype html>",
+                " <doctype html>",
+                " <doctype html!>",
+                "<!doctype html>"
+            ],
+            "answer":4,
+            "id":13
+        },
+        {
+            "question":"Which of the following is used to read an HTML page and render it?",
+            "options":[
+                "Web server",
+                "Web network",
+                "Web browser",
+                "Web matrix"
+            ],
+            "answer":3,
+            "id":14
+        }
+    ]
+ },
+ {
+    "quizName":"CSS Quiz",
+    "quizId":2,
+    "questions":[
+        {
+            "question":"What is CSS?",
+            "options":[
+                "CSS is a style sheet language",
+                "CSS is designed to separate the presentation and content, including layout, colors, and fonts",
+                "CSS is the language used to style the HTML documents",
+                "All of the mentioned"
+            ],
+            "answer":4,
+            "id":11
+        },
+        {
+            "question":"Which of the following tag is used to embed css in html page?",
+            "options":[
+                "<css>",
+                "<!DOCTYPE html>",
+                "<script>",
+                "<style>"
+            ],
+            "id":12,
+            "answer":4
+        },
+        {
+            "question":"Which of the following CSS selectors are used to specify a group of elements?",
+            "options":[
+                "tag",
+                "id",
+                "class",
+                "both class and tag"
+            ],
+            "answer":3,
+            "id":13
+        },
+        {
+            "question":"Which of the following has introduced text, list, box, margin, border, color, and background properties?",
+            "options":[
+                "HTML",
+                "PHP",
+                "CSS",
+                "Ajax"
+            ],
+            "answer":3,
+            "id":14
+        }
+    ]
+ },
+ {
+    "quizName":"Science Quiz",
+    "quizId":3,
+    "questions":[
+        {
+            "question":"What is the PH of H2O?",
+            "options":[
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "answer":2,
+            "id":11
+        },
+        {
+            "question":"Which of the following gas is reduced in the reduction process?",
+            "options":[
+                "Oxygen",
+                "Helium",
+                "Carbon",
+                "Hydrogen"
+            ],
+            "id":12,
+            "answer":4
+        },
+        {
+            "question":"Which of the following compound is mainly used in hand sanitizer?",
+            "options":[
+                "Aldehyde",
+                "Acetic acid",
+                "Alcohol",
+                "Ketone"
+            ],
+            "answer":3,
+            "id":13
+        },
+        {
+            "question":"What is the S.I unit of frequency?",
+            "options":[
+                "Diopter",
+                "Second",
+                "Hertz",
+                "Meter"
+            ],
+            "answer":3,
+            "id":14
+        },
+        {
+            "question":"Acid turns blue litmus paper into which color?",
+            "options":[
+                "Black",
+                "Blue",
+                "Red",
+                "Orange"
+            ],
+            "answer":3,
+            "id":15
+        },
+        {
+            "question":"Which of the following enzymes is not present in the human stomach?",
+            "options":[
+                "Pepsin",
+                "Hydrochloric acid",
+                "Mucus",
+                "Trypsin"
+            ],
+            "answer":4,
+            "id":16
+        },
+        {
+            "question":"Which of the following gland is present in the human mouth?",
+            "options":[
+                "Adrenal",
+                "Pituitary",
+                "Gonads",
+                "Salivary"
+            ],
+            "answer":4,
+            "id":17
+        },
+        {
+            "question":"Name the gland which is present above our kidneys?",
+            "options":[
+                "Adrenal",
+                "Pituitary",
+                "Gonads",
+                "Salivary"
+            ],
+            "answer":1,
+            "id":18
+        },
+        {
+            "question":"What is the basic unit of our neural system?",
+            "options":[
+                "Neutron",
+                "Neuron",
+                "Nephron",
+                "Nucleon"
+            ],
+            "answer":2,
+            "id":19
+        },
+        {
+            "question":"What is the basic unit of our excretory system?",
+            "options":[
+                "Neutron",
+                "Neuron",
+                "Nephron",
+                "Nucleon"
+            ],
+            "answer":3,
+            "id":20
+        }
+    ]
+ }
+]
