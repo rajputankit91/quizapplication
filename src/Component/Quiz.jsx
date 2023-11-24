@@ -37,11 +37,11 @@ export default function Quiz(){
 
     return (
         <Container>
-            <headerDiv>
+            <HeaderDiv>
                 <Heading><strong>Quiz name : </strong>{thisQuiz.quizName}</Heading>
-            </headerDiv>
+            </HeaderDiv>
 
-            <ContentDiv current={current} >
+            <ContentDiv >
                 {showResult ? 
                     (<QuizResult score= {score} totalScore = {thisQuiz.questions.length} />)
                     :
@@ -121,7 +121,7 @@ const Input = styled.input`
     font-size:25px;
 `;
 
-const headerDiv = styled.div`
+const HeaderDiv = styled.div`
     
 
 `;

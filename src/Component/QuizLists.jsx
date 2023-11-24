@@ -2,28 +2,31 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import quizData from "../../public/QuizQuestionData.json"
+console.log(quizData);
 
 const QuizLists = () =>{
-    const [quizNameData,setQuiznameData] = useState([]);
-    const navigate = useNavigate()
+    // const [quizNameData,setQuiznameData] = useState(quizData);
+    // // console.log(quizNameData);
+    // const navigate = useNavigate()
 
-    useEffect(() =>{
-        const fetchData = async () =>{
-            axios.get("../../public/quizQuestionData.json")
-            .then((res) =>{
-                setQuiznameData(res.data)
-                console.log(res.data)
-            })
-            .catch(err => console.log(err))
-        }
-        fetchData();
-    },[]);
+    // useEffect(() =>{
+    //     const fetchData = async () =>{
+    //         axios.get("../../public/quizQuestionData.json")
+    //         .then((res) =>{
+    //             setQuiznameData(res.data)
+    //             console.log(res.data)
+    //         })
+    //         .catch(err => console.log(err))
+    //     }
+    //     fetchData();
+    // },[]);
 
     return (
         <Container>
             <h1>Quizzes</h1>
             {
-                quizNameData.map((item) =>{
+                quizData.map((item) =>{
                     return (
                         <li key={item.quizId} id={item.quizId}>
                             <Link to={`/quiz/${item.quizId}`} style={{color:"white"}}>{item.quizName}</Link>
