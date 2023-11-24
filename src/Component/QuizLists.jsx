@@ -1,25 +1,23 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import styled from "styled-components";
 import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const QuizLists = () =>{
     const [quizNameData,setQuiznameData] = useState([]);
     const navigate = useNavigate()
-    
 
     useEffect(() =>{
         const fetchData = async () =>{
-            axios.get("../../public/QuizQuestionData.json")
+            axios.get("../../public/quizQuestionData.json")
             .then((res) =>{
                 setQuiznameData(res.data)
-                console.log(res.data);
+                console.log(res.data)
             })
-            .catch(err =>console.log(err))
+            .catch(err => console.log(err))
         }
         fetchData();
     },[]);
-
 
     return (
         <Container>
