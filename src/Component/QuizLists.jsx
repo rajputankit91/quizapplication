@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import styled from "styled-components";
 import { Link, useNavigate } from "react-router-dom";
 import QuizData from "../../public/QuizQuestionData.json";
@@ -7,21 +6,6 @@ import QuizData from "../../public/QuizQuestionData.json";
 const QuizLists = () =>{
     const [quizNameData,setQuiznameData] = useState([]);
     const navigate = useNavigate()
-    
-
-    // useEffect(() =>{
-    //     const fetchData = async () =>{
-    //         axios
-    //         .get("../../public/QuizQuestionData.json")
-    //         .then((res) =>{
-    //             setQuiznameData(res.data)
-    //             console.log(res.data);
-    //         })
-    //         .catch(err =>console.log(err))
-    //     }
-    //     fetchData();
-    // },[]);
-
 
     return (
         <Container>
