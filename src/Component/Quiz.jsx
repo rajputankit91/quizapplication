@@ -37,11 +37,11 @@ export default function Quiz(){
 
     return (
         <Container>
-            <HeaderDiv>
+            <headerDiv>
                 <Heading><strong>Quiz name : </strong>{thisQuiz.quizName}</Heading>
-            </HeaderDiv>
+            </headerDiv>
 
-            <ContentDiv >
+            <ContentDiv current={current} >
                 {showResult ? 
                     (<QuizResult score= {score} totalScore = {thisQuiz.questions.length} />)
                     :
@@ -54,7 +54,7 @@ export default function Quiz(){
                                         return (
                                             <OptionDiv key={index} onClick={() =>{
                                                     setSelected(index + 1)
-                                                }} style = {{backgroundColor:`${selected == index + 1 ? "rgb(75, 102, 105)" : ""}`,color:`${selected == index + 1 ? "white" : ""}`}} >
+                                                }} style = {{backgroundColor:`${selected == index + 1 ? "rgb(66, 32, 232)" : ""}`,color:`${selected == index + 1 ? "white" : ""}`}} >
                                                 {option};
                                             </OptionDiv>
                                         )
@@ -77,23 +77,13 @@ export default function Quiz(){
 
 const Container = styled.div`
     width:100%;
-    height:90Vh;
-    background-color:rgb(129, 153, 155);
+    height:100vh;
+    background-color:rgb(139, 170, 217);
     display:flex;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     border-radius:10px;
-`;
-
-const Button = styled.button`
-    background-color: rgb(105,105,105);
-    color: white;
-    font-size: 16px;
-    padding: 8px 20px;
-    border-radius: 5px;
-    margin: 10px 05px;
-    cursor: pointer;
 `;
 
 const OptionDiv = styled.div`
@@ -111,9 +101,8 @@ const OptionDiv = styled.div`
     text-align: center;
     font-size:18px;
     &:hover{
-        background-color:rgb(105, 132, 135);
-        color:white;
-        
+        background-color:rgb(143, 124, 235);
+        color:white;   
     }
 `;
 
@@ -121,13 +110,14 @@ const Input = styled.input`
     font-size:25px;
 `;
 
-const HeaderDiv = styled.div`
+const headerDiv = styled.div`
     
 
 `;
 
 const Heading = styled.p`
-    font-Size:25px;
+    font-Size:45px;
+    color:white;
 `;
 
 const ContentDiv = styled.div`
@@ -137,6 +127,9 @@ const ContentDiv = styled.div`
     justify-Content:center;
     flex-Direction:column;
     align-Items:center;
+    background-color:white;
+    border-radius: 35px;
+    padding:10px;
 `;
 
 const Question = styled.h2`

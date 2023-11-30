@@ -1,0 +1,14 @@
+[
+ {
+    "quizName":"HTML",
+    "quizId":1
+  },
+  {
+    "quizName":"CSS",
+    "quizId":2
+  },
+  {
+    "quizName":"JAVASCRIPT",
+    "quizId":3
+  }
+]
