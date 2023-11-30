@@ -2,24 +2,25 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import styled from "styled-components";
 import { Link, useNavigate } from "react-router-dom";
+import QuizData from "../../public/QuizQuestionData.json";
 
 const QuizLists = () =>{
     const [quizNameData,setQuiznameData] = useState([]);
     const navigate = useNavigate()
     
 
-    useEffect(() =>{
-        const fetchData = async () =>{
-            axios
-            .get("../../public/QuizQuestionData.json")
-            .then((res) =>{
-                setQuiznameData(res.data)
-                console.log(res.data);
-            })
-            .catch(err =>console.log(err))
-        }
-        fetchData();
-    },[]);
+    // useEffect(() =>{
+    //     const fetchData = async () =>{
+    //         axios
+    //         .get("../../public/QuizQuestionData.json")
+    //         .then((res) =>{
+    //             setQuiznameData(res.data)
+    //             console.log(res.data);
+    //         })
+    //         .catch(err =>console.log(err))
+    //     }
+    //     fetchData();
+    // },[]);
 
 
     return (
@@ -27,7 +28,7 @@ const QuizLists = () =>{
             <ContentDiv>
                 <h1>Quizzes</h1>
                 {
-                    quizNameData.map((item) =>{
+                    QuizData.map((item) =>{
                         return (
                             <li key={item.quizId} id={item.quizId}>
                                 <Link to={`/quiz/${item.quizId}`} style={{color:"white"}}>{item.quizName}</Link>
