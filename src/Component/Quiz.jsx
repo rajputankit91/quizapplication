@@ -65,7 +65,7 @@ export default function Quiz(){
                             <ButtonDiv>
                                 <PrevButton onClick={haldlePrevious}>Previous</PrevButton>
                                 <NextButton onClick={haldleNext}>Next</NextButton>
-                                <Link to={"/"}><ExitButton>Exit</ExitButton></Link>
+                                <Link to={"/quizlist"}><ExitButton>Exit</ExitButton></Link>
                             </ButtonDiv>
                         </>
                     )
@@ -89,7 +89,7 @@ const Container = styled.div`
 const OptionDiv = styled.div`
     box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 29px 0px;
     padding:5px;
-    margin:10px;
+    margin:20px;
     min-height: 100px;
     min-width:400px;
     max-width:400px;

@@ -100,40 +100,38 @@
     ]
  },
  {
-    "quizName":"Science Quiz",
+    "quizName":"JavaScript Quiz",
     "quizId":3,
     "questions":[
         {
-            "question":"What is the PH of H2O?",
+            "question":". ______ operator is used to concatenate two strings.",
             "options":[
-                "6",
-                "7",
-                "8",
-                "9"
+                "Dot",
+                "Arrow",
+                "Comma",
+                "Plus"
             ],
-            "answer":2,
+            "answer":4,
             "id":11
         },
         {
-            "question":"Which of the following gas is reduced in the reduction process?",
+            "question":"Which of the following is a server-side Java Script object?",
             "options":[
-                "Oxygen",
-                "Helium",
-                "Carbon",
-                "Hydrogen"
+                "FileUpload",
+                "Date",
+                "Function",
+                "File"
             ],
             "id":12,
             "answer":4
         },
         {
-            "question":"Which of the following compound is mainly used in hand sanitizer?",
+            "question":"Spaces,Punctuation marks are called as __________ Symbols in JavaScript.",
             "options":[
-                "Aldehyde",
-                "Acetic acid",
-                "Alcohol",
-                "Ketone"
+                "True",
+                "False"
             ],
-            "answer":3,
+            "answer":2,
             "id":13
         },
         {
